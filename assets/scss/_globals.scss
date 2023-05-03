@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.bg-container {
+  background-color: map-get($colors, bg-color-primary);
+  width: 100%; 
+}
+
+.bg-dark-container {
+  background-color: map-get($colors, bg-dark-color) !important;
+}
+
+.container {
+  display: flex;
+  
+  &-vertical {
+    flex-direction: column;
+  }
+}
+
+.justify-evenly {
+  justify-content: space-evenly !important;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.header {
+  .navbar {
+    background-color: map-get($colors, bg-dark-color) !important;
+  }
+
+  .logo {
+    width: 11rem;
+    height: 2rem;
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .nav-link {
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: map-get($colors, bg-dark-alternative-color);
+    color: map-get($colors, bg-color-primary) !important;
+    transition: all 200ms ease-in-out;
+    &:hover {
+      transition: all 200ms ease-in-out;
+      background-color: map-get($colors, bg-color-secondary);
+      color: map-get($colors, accent-color) !important;
+    }
+  }
+
+  .container-position {
+    @extend .container;
+    @extend .justify-between;
+    margin-bottom: 0.65rem;
+
+    a {
+      width: 15rem;
+      height: 5rem;
+      text-align: center;
+      text-decoration: none;
+      color: map-get($colors, bg-dark-color);
+      line-height: 5rem;
+      font-size: 2rem;
+
+      &:hover {
+        color: map-get($colors, bg-color-secondary);
+        transition: color 250ms ease-in-out;
+      }
+
+      :not(:hover) {
+        transition: color 150ms ease;
+      }
+
+      @include breakpoint-down(medium) {
+        width: 6rem;
+        height: 2rem;
+        line-height: 3rem;
+      }
+    }
+
+    .current {
+      line-height: 5rem;
+      font-size: 3rem;
+      font-family: $font-title;
+      color: map-get($colors, title-color);
+
+      @include breakpoint-down(medium) {
+        line-height: 3rem;
+        font-size: 1.4rem;
+      }
+    }
+
+  }
+}
+
+.card {
+  background-color: map-get($colors, bg-color-primary);
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-img {
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  &-description {
+    font-size: 0.8rem;
+  }
+}
+
+.btn-primary {
+  border: none;
+  height: 2.5rem;
+  width: 5rem;
+  background-color: map-get($colors, bg-dark-alternative-color) !important;
+  color: map-get($colors, bg-color-primary) !important;
+  transition: all 200ms ease-in-out;
+
+   &:hover {
+    transition: all 200ms ease-in-out;
+    background-color: map-get($colors, bg-color-secondary) !important;
+    color: map-get($colors, accent-color) !important;
+  }
+}
+
+.form {
+  height: 70vh;
+}
+
+.footer {
+  justify-self: flex-end;
+
+  .rrss {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem 0.75rem 1rem 0.75rem;
+    filter: invert(100%) sepia(19%) saturate(7288%) hue-rotate(325deg) brightness(104%) contrast(103%);
+  }
+
+}

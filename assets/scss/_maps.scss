@@ -1,0 +1,25 @@
+// Breakpoints
+$breakpoints-up: ("large" : "992px",
+    "medium": "480px"
+);
+
+$breakpoints-down: ("small": "479px",
+    "small-medium": "900px",
+    "medium": "991px"
+);
+
+// Colors map
+$colors: ( // Background colors
+    bg-color-primary: $platinum,
+    bg-color-secondary: $sandy-brown,
+    bg-dark-color: $dark-purple,
+    bg-dark-alternative-color: $ultra-violet,
+    accent-color: $maize,
+
+    // Utilities colors
+    title-color: $ultra-violet,
+    title-alternative-color: $sandy-brown,
+    text-color: $dark-purple,
+    shadow-color: $maize,
+    border-color: $sandy-brown);
+
