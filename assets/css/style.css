@@ -20,6 +20,9 @@ body {
   .container-vertical {
     flex-direction: column; }
 
+.visibility-hidden {
+  visibility: hidden; }
+
 .justify-evenly {
   justify-content: space-evenly !important; }
 
@@ -87,6 +90,13 @@ body {
     object-fit: cover; }
   .card-description {
     font-size: 0.8rem; }
+
+.vh-70 {
+  min-height: 70vh; }
+
+.details-img {
+  height: 12rem;
+  border-radius: 0.3rem; }
 
 .btn-primary {
   border: none;

@@ -28,6 +28,10 @@ body {
   }
 }
 
+.visibility-hidden {
+  visibility: hidden;
+}
+
 .justify-evenly {
   justify-content: space-evenly !important;
 }
@@ -123,6 +127,17 @@ body {
 
   &-description {
     font-size: 0.8rem;
+  }
+}
+
+.vh-70 {
+  min-height: 70vh;
+}
+
+.details {
+  &-img {
+    height: 12rem;
+    border-radius: 0.3rem;
   }
 }
 

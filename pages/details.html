@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../assets/img/Logos/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../assets/img/Logos/favicon.png"
+      type="image/x-icon"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,7 +35,7 @@
     <header class="header bg-container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
+          <a class="navbar-brand" href="../index.html"
             ><img
               src="../assets/img/Logos/Logo Amazing Events.png"
               class="logo"
@@ -51,13 +55,14 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link" href="../index.html">Inicio</a>
-              <a class="nav-link" href="../index.html?position=upcoming">Proximos eventos</a>
-              <a class="nav-link" href="../index.html?position=past">Eventos pasados</a>
+              <a class="nav-link" href="../index.html?position=upcoming"
+                >Proximos eventos</a
+              >
+              <a class="nav-link" href="../index.html?position=past"
+                >Eventos pasados</a
+              >
               <a class="nav-link" href="./contact.html">Contacto</a>
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./statistics.html"
+              <a class="nav-link" href="./statistics.html"
                 >Estadisticas</a
               >
             </div>
@@ -65,13 +70,13 @@
         </div>
       </nav>
       <div class="container-position">
-        <a href="./contact.html">
+        <a href="" id="leftArrow">
           <span>
             <i class="fa-solid fa-arrow-left"></i>
           </span>
         </a>
-        <span class="current">Estadisticas</span>
-        <a href="../index.html">
+        <span class="current" id="current"></span>
+        <a href="" id="rightArrow">
           <span>
             <i class="fa-solid fa-arrow-right"></i>
           </span>
@@ -79,48 +84,8 @@
       </div>
     </header>
 
-    <main class="container-vertical justify-between vh-70">
-      <div class=" m-3 table-responsive-md ">
-        <table id="estadisticasEventos" class="table p-4">
-          <thead>
-            <tr class="bg-container">
-              <th colspan="10">Estadísticas de Eventos</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="col">Evento con mas asistencia</th>
-              <th scope="col">Evento con menos asistencia</th>
-              <th scope="col">Evento con mayor capacidad</th>
-            </tr>
-            <tr id="max-stats-row">
-            </tr>
-          </tbody>
-          <thead>
-            <tr class="bg-container">
-              <th colspan="10">Estadísticas de Proximos Eventos por categoria</th>
-            </tr>
-          </thead>
-          <tbody id="future-events-row">
-            <tr>
-              <th scope="col">Categorías</th>
-              <th scope="col">Estimación de Ingresos</th>
-              <th scope="col">Porcentaje de asistencia estimada</th>
-            </tr>
-          </tbody>
-          <thead>
-            <tr class="bg-container">
-              <th colspan="12">Estadisticas de Eventos Pasados por categoria</th>
-            </tr>
-          </thead>
-          <tbody id="past-events-row">
-            <tr>
-              <th scope="col">Categorías</th>
-              <th scope="col">Ingresos</th>
-              <th scope="col">Porcentaje de asistencia</th>
-            </tr>
-          </tbody>
-        </table>
+    <main class="container-vertical justify-between">
+      <div id="details-container" class="container-fluid d-flex container-vertical align-items-center vh-70">
       </div>
     </main>
 
