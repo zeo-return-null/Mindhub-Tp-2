@@ -84,7 +84,7 @@
         <table id="estadisticasEventos" class="table p-4">
           <thead>
             <tr class="bg-container">
-              <th colspan="10">Estadisticas de Eventos</th>
+              <th colspan="10">Estadísticas de Eventos</th>
             </tr>
           </thead>
           <tbody>
@@ -93,45 +93,45 @@
               <th scope="col">Evento con menos asistencia</th>
               <th scope="col">Evento con mayor capacidad</th>
             </tr>
-            <tr>
-              <td scope="row">Evento 1</td>
+            <tr id="max-stats-row">
+              <!-- <td scope="row">Evento 1</td>
               <td>Evento 2</td>
-              <td>Evento 3</td>
+              <td>Evento 3</td> -->
             </tr>
           </tbody>
           <thead>
             <tr class="bg-container">
-              <th colspan="10">Estadisticas de Proximos Eventos por categoria</th>
+              <th colspan="10">Estadísticas de Proximos Eventos por categoria</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="future-events-row">
             <tr>
-              <th scope="col">Categorias</th>
-              <th scope="col">Ingresos</th>
-              <th scope="col">Porcentaje de asistencia</th>
+              <th scope="col">Categorías</th>
+              <th scope="col">Estimación de Ingresos</th>
+              <th scope="col">Porcentaje de asistencia estimada</th>
             </tr>
-            <tr>
-              <td scope="row">Evento 1</td>
+            <!-- <tr id="future-events-row"> -->
+              <!-- <td scope="row">Evento 1</td>
               <td >Evento 2</td>
-              <td >Evento 3</td>
-            </tr>
+              <td >Evento 3</td> -->
+            <!-- </tr> -->
           </tbody>
           <thead>
             <tr class="bg-container">
               <th colspan="12">Estadisticas de Eventos Pasados por categoria</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="past-events-row">
             <tr>
-              <th scope="col">Categorias</th>
+              <th scope="col">Categorías</th>
               <th scope="col">Ingresos</th>
               <th scope="col">Porcentaje de asistencia</th>
             </tr>
-            <tr>
-              <td scope="row">Evento 1</td>
+            <!-- <tr id="past-events-row"> -->
+              <!-- <td scope="row">Evento 1</td>
               <td >Evento 2</td>
-              <td >Evento 3</td>
-            </tr>
+              <td >Evento 3</td> -->
+            <!-- </tr> -->
           </tbody>
         </table>
       </div>
@@ -156,6 +156,7 @@
         />
       </div>
     </footer>
+    <script src="../assets/js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
