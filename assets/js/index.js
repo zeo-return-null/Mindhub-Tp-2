@@ -294,7 +294,7 @@ function searchFilter(arr, text) {
   if(filter.length === 0) {
     cardsContainer.innerHTML = `
     <div>
-    <h3>No encontrado</h3>
+    <h3 class="text-center">No encontrado</h3>
     </div>
     `
     return []
@@ -303,7 +303,8 @@ function searchFilter(arr, text) {
 }
 // crear cartas
 function createCard(e) {
-  cardsContainer.classList.add("row", "row-cols-3", "sm-4", "col-md-12", "row-cols-sm-4", "my-4", "py-5", "px-2", "d-flex", "justify-content-center")
+  // cardsContainer.classList.add("row", "row-cols-3", "sm-4", "col-md-12", "row-cols-sm-4", "my-4", "py-5", "px-2", "d-flex", "justify-content-center")
+  cardsContainer.classList.add("row" ,"row-cols-1" ,"row-cols-sm-2" ,"row-cols-md-4" ,"row-cols-xl-4" ,"row-cols-xxl-4" ,"align-content-center" ,"m-4","justify-content-center")
   let cardTemplate = `
   <div id="card-${e.id}" class="card m-1 container-vertical justify-evenly">
   <div class="card-body justify-content-between">

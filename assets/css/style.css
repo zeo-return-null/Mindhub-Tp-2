@@ -17,6 +17,11 @@ body {
 
 .container, .header .container-position {
   display: flex; }
+  .container-search {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin: 2rem 2rem 0 2rem; }
   .container-vertical {
     flex-direction: column; }
 
@@ -71,6 +76,7 @@ body {
         height: 2rem;
         line-height: 3rem; } }
   .header .container-position .current {
+    text-align: center;
     line-height: 5rem;
     font-size: 3rem;
     font-family: "Jockey One", sans-serif;

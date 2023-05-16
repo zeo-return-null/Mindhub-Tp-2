@@ -23,9 +23,17 @@ body {
 .container {
   display: flex;
   
+  &-search {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin: 2rem 2rem 0 2rem;
+  }
+
   &-vertical {
     flex-direction: column;
   }
+
 }
 
 .visibility-hidden {
@@ -98,6 +106,7 @@ body {
     }
 
     .current {
+      text-align: center;
       line-height: 5rem;
       font-size: 3rem;
       font-family: $font-title;
