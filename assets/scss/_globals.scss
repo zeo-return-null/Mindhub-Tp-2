@@ -121,6 +121,13 @@ body {
   }
 }
 
+.input-search {
+  width: 40%;
+  @include breakpoint-down(medium) {
+    width: 100%;
+  }
+}
+
 .card {
   background-color: map-get($colors, bg-color-primary);
 
